@@ -3,6 +3,7 @@ package com.guilhermecustodio.demo.services;
 
 import com.guilhermecustodio.demo.entities.User;
 import com.guilhermecustodio.demo.repositories.UserRepository;
+import com.guilhermecustodio.demo.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class UserService {
 
     public User findById(Long id){
         Optional<User> obj = userRepository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insert(User obj){
