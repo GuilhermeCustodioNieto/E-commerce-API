@@ -3,11 +3,14 @@ package com.guilhermecustodio.demo.services;
 
 import com.guilhermecustodio.demo.entities.User;
 import com.guilhermecustodio.demo.repositories.UserRepository;
+import com.guilhermecustodio.demo.services.exceptions.DatabaseException;
 import com.guilhermecustodio.demo.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.text.RuleBasedCollator;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,7 +34,15 @@ public class UserService {
     }
 
     public void delete(Long id){
-        userRepository.deleteById(id);
+        try{
+            User user = findById(id);
+            userRepository.delete(user);
+        }catch(ResourceNotFoundException e){
+            throw new ResourceNotFoundException(id);
+        } catch (DataIntegrityViolationException e){
+            throw new DatabaseException(e.getMessage());
+        }
+
     }
 
     public User update(Long id, User obj){
