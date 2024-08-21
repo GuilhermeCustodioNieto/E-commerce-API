@@ -86,24 +86,18 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Um projeto onde foi desenvolvida uma API própria para E-commerce, onde podemos fazer operações de CRUD completo de usuários, seleção e listagem de produtos e categorias de produtos, subtotal de compra e total de compra. Tudo sendo armazenado em um banco de dados utilziando JPA e PostgreSQL
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Objetivos do projeto:
+* Desenvolvimento de uma aplicação completa utilizando uma das linguagens de programação mais requisitadas do mercado atual
+* Estudo do Spring Boot, PostgreSQL e todas as habilidades necessárias para desenvolver uma API Restfull
+* Testar e utulizar a arquitetura de software em camadas
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Sendo open-source, qualquer issue, fork ou contribuição é bem-vinda!
 
-Use the `BLANK_README.md` to get started.
+### Construido com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Aqui veremos as linguagense e frameworks utilizados no projeto
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -121,9 +115,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
+Executando a aplicação
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
