@@ -47,11 +47,11 @@ E-Commerce-API/
 #### Imagens dos Diagramas
 - Diagrama de Classes
 
-<img src="Diagrama de Classes.png" alt="Diagrama de Classes">
+<img src="extra/Diagrama de Classes.png" alt="Diagrama de Classes">
 
 - Arquitetura
 
-<img src="extra\arquitetura.png" alt="Arquitetura">
+<img src="extra\Arquitetura.png" alt="Arquitetura">
 
 ---
 
